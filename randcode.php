@@ -1,23 +1,14 @@
 <?php 
 
 
-
-
-/*
-if ($_GET['act']==='rand'){
-
-
-}*/
-
 echo getVoucher();
 
 function getVoucher(){
-	//$data=array();
+
 	$tempArray=array();
 
 	date_default_timezone_set("Asia/Jakarta");
-	//$date = '2018-01-10';
-	//$end_date='2018-03-23';
+
 	$date = date('Y-m-d',strtotime($_POST['start-date']));
 	$end_date=date('Y-m-d',strtotime($_POST['end-date']));
 	$count=0;
@@ -30,11 +21,10 @@ function getVoucher(){
 		}else{
 			echo "ada yang sama";
 		}
-//echo $date." ".randVoucher()."<br>";
-//print_r($tempArray);
+
 		$date= date("Y-m-d", strtotime("+1 day",strtotime($date)));
 	}
-//print_r($tempArray);
+
 }
 
 function randVoucher(){

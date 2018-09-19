@@ -17,12 +17,11 @@ $(document).ready(function(){
 			type : 'POST',
 			url : 'randcode.php',
 			data : formData
-			//dataType : 'json',
-			//encode : true
+		
 		}).done(function(response){
 			$('#voucher-post').html(response);
 		});
-		//event.preventDefault();
+		
 	});
 	
 	$('#clear').click(function(){
@@ -30,19 +29,7 @@ $(document).ready(function(){
 	})
 
 });
-	/*
-	function loadDoc(){
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-
-			document.getElementById("voucher-post").innerHTML=this.responseText;
-
-		}
-	};
-	xhttp.open("GET","randcode.php",true);
-	xhttp.send();
-}*/
+	
 </script>
 
 </head>
