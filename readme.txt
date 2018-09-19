@@ -1,0 +1,1 @@
+This program will generate a random unique code based on date range. The code is composed of five letter and one number.
