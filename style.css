@@ -1,0 +1,20 @@
+div.post-box {
+	margin-top: 10px;
+	position: relative;
+	border-style: solid;
+	border-width: 1px; 
+	width: 200px;
+	height: 400px;
+	overflow: scroll;
+}
+p.voucher-post{
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	margin-top: 0px;
+}
+
+p.description-1{
+	width: 300px;
+	text-align: justify;
+}
